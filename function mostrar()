@@ -1,0 +1,44 @@
+function mostrar()
+{
+
+let nombre;
+let sexo;
+let edad;
+let nomminimo;
+let edadmujer;
+let respuesta;
+let bandera=0;
+
+for(let i=0; i<5 ; i++)
+
+{
+
+   do{
+   nombre=prompt("ingrese nombre");
+   }while(!(IsNaN(nombre)));
+
+   do
+   {
+    sexo=prompt("ingrese sexo m/f");
+   }while(sexo!="m" && sexo!="f");
+
+   do
+   {
+    edad=prompt("ingrese la edad");
+   }while(edad<0 && edad>110);
+
+
+if(bandera==0 || edadmujer>edad)
+{
+	edadmujer=edad;
+	nomminimo=nombre;
+	flag=1;
+}
+
+}
+
+console.log("el nombre de la mujer mas joven ingresado es " + nomminimo);
+
+
+
+}
